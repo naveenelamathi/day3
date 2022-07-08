@@ -1,0 +1,38 @@
+var mydetail={
+    name:"Natarajan",
+    mail:"naveenelamathi2018@gmail.com",
+    no:123456,
+    st:"tamilnadu",
+}
+var mydetailjson=JSON.stringify(mydetail);
+console.log(mydetailjson);
+var detailjson=JSON.parse(mydetailjson);
+console.log(detailjson);
+
+for(let key in detailjson){
+    console.log('key is'+ key +'value is'+detailjson[key]);      //for in loop
+} 
+ 
+var arr=[
+    names="naveen",
+    mail="elamathi1806",
+    no=1234567,
+    dt="cuddalore",   
+]
+  var arrjson=JSON.stringify(arr);
+  console.log(arrjson);
+  var arraysjson=JSON.parse(arrjson);
+  console.log(arraysjson);
+
+  for(let naveen of arraysjson){                    //for of loop
+    console.log(naveen);
+  }    
+
+  for(let i=0;i<arraysjson.length;i++){
+    console.log(arraysjson[i]);
+  }                                                 //for loop
+  
+  
+  arraysjson.forEach(element => {                   //for each loop
+    console.log(element)
+  });

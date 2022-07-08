@@ -1,0 +1,44 @@
+var resume={
+  basicInformation:{
+    Name:"Natarajan",
+    lastname:"R",
+    mailid:"naveenelamathi2018@gmail.com",
+    no:8531019925,
+    nation:"INDIAN",
+    state:"Tamilnadu",
+    address:"110 mariyamman kovil st,Tirukoilur",
+    dt:"Villupuram",
+    pincode:605701,
+},
+workAndExperience:"I am worked in the banking sector for last 3years",
+education:[
+    {
+        school:"vidhya mandir hr sec school,udhangarai",
+        "year of 10th pass":"2008",
+        "year of 12th pass" :"2010",
+    },
+    {
+        college:"mailam engineering college,Mailam",
+        degree:"bachelor of cse",
+        passedout:2016,
+    },
+
+],
+skills:[
+    "1)reading books",
+    "2)working with computer basics",
+    "3)basics about sql and java",
+],
+languagesKnown:["English and Tamil"],
+intersets:[
+    "1)cricket",
+    "2)baseketball",
+    "3)chess",
+    "4)football",
+],
+
+}
+var resumejson=JSON.stringify(resume);
+console.log(resumejson);
+var resumeobj=JSON.parse(resumejson);
+console.log(resumeobj);
